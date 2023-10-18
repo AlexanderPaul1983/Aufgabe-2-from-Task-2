@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
-        android:text="First Page"
+        android:text="@string/first_page"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#1BA51B"
-        android:text="Klick mich!"
+        android:text="@string/klick_mich"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/EditText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,12 +36,14 @@
         android:layout_height="28dp"
         android:layout_marginBottom="64dp"
         android:background="@color/material_dynamic_neutral60"
-        android:hint="Geben Sie ihr Password"
-        android:textColor="@color/black"
-        android:textColorHint="#0000FF"
+        android:hint="@string/geben_sie_ihr_password"
+        android:textColor="@color/white"
+        android:textColorHint="#0606E3"
         app:layout_constraintBottom_toTopOf="@+id/firstPageText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints=""
+        android:inputType="textWebEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
